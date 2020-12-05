@@ -1,0 +1,88 @@
+@import url("https://fonts.googleapis.com/css2?family=Texturina&display=swap");
+* {
+  margin: 0;
+  font-family: "Texturina", serif;
+}
+
+body {
+  background-image: url("https://wallpapercave.com/wp/wp4275032.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  background-color: black;
+  height: 4rem;
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+}
+
+header > h3 {
+  padding: 0.25em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 1.2rem;
+}
+
+.container > h3 {
+  color: black;
+}
+.container > button {
+  padding: 1em;
+  margin: 0.5em;
+  background-color: black;
+  color: white;
+}
+
+#dothraki-text {
+  height: 20rem;
+  width: 20em;
+  border: 2px solid black;
+  margin: 0.5em;
+}
+
+footer {
+  background-color: black;
+  height: 4rem;
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.2em;
+  color: white;
+}
+
+#spinner {
+  visibility: hidden;
+  width: 80px;
+  height: 80px;
+
+  border: 2px solid #f3f3f3;
+  border-top: 3px solid #f25a41;
+  border-radius: 100%;
+
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#spinner.show {
+  visibility: visible;
+}
