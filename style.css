@@ -37,6 +37,7 @@ header > h3 {
   margin: 0.5em;
   background-color: black;
   color: white;
+  cursor: pointer;
 }
 
 #dothraki-text {
